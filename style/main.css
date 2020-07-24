@@ -1,0 +1,1013 @@
+/*start global*/
+html{
+    scroll-behavior: smooth;
+}
+.conatiner
+{
+    width: 1000px;
+    margin: 0 auto;
+}
+*
+{
+    font-size: 15px;
+    text-transform: capitalize;
+}
+* :focus
+{
+    outline: none;
+}
+.clear
+{
+    clear:both;
+    margin:0;
+    padding: 0;
+    height: 0;
+}
+:root
+{
+    --text-color:#707070;
+    --hov-color: #e5493a;
+    --spec-color:#959595;
+    --wit-color:#FFF;
+}
+a:active
+{
+    cursor: progress;
+}
+/*details*/
+details
+{
+    color: var(--hov-color ,red);
+    margin-bottom: 40px;
+}
+details summary
+{
+    cursor: pointer;
+}
+details summary::after
+{
+    content:'\f101';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 600;
+    margin-left:5px;
+    font-size: smaller;
+}
+details summary::-webkit-details-marker 
+{
+    display: none; 
+}
+/*end global*/
+/*start main*/
+.nav__list
+{
+    background-color: #252525;
+}
+nav
+{
+    background-color:#111;
+    overflow: auto;
+    color:var(--text-color , #DDD);
+    position: fixed;
+    width:100%;
+    z-index: 1;
+}
+nav select 
+{
+    cursor: pointer;
+}
+nav section.left
+{
+    float:left;
+    width:50%;
+}
+nav section.left *,
+nav section.right *
+{
+    display: inline-block;
+}
+nav section.left ul
+{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+nav section.left ul li select
+{
+    border: none;
+    background-color:transparent;
+    width:70px;
+    color:var(--text-color , #DDD)
+}
+nav section.left ul li
+{
+    margin-right:40px
+}
+/*right section*/
+nav section.right
+{
+    float: right;
+    width:50%;
+    margin-top:14px;
+    text-align: right;
+}
+nav section.right div,
+nav section.right select
+{
+    margin-right: 10px;
+}
+nav section.right div.links::before
+{
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    content: "\f2f6";   
+}
+nav section.right > span::after
+{
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    content: "\f004"; 
+}
+nav section.right div.links a
+{
+    text-decoration: none;
+    color:var(--text-color , #DDD)
+}
+nav section.right div.links a:hover
+{
+    color:#8dc63f
+}
+nav section.right select
+{
+    background-color:transparent;
+    border:none;
+    color:var(--text-color , #DDD)
+}
+nav section.right div a i
+{
+    color:var(--text-color , #DDD)
+}
+nav section.right div a i:hover
+{
+    color: var(--hov-color ,red);
+}
+
+/*end main*/
+/*start header*/
+header
+{
+    background-color: #252525;
+    overflow: auto;
+    padding-top: 47px;
+}
+header section h3
+{
+    float:left;
+    width:26%;
+    color:var(--wit-color ,white);
+    font-weight: bold;
+    font-size: 20px;
+    text-transform: lowercase;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+header section ul
+{
+    list-style: none;
+    float:left;
+    width:64%;
+    padding: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+header section ul li 
+{
+    display: inline;
+    margin-right:10px;
+}
+header section ul li a
+{
+    text-decoration: none;
+    color:var(--text-color , #DDD);
+    padding-top:1px;
+    text-transform: uppercase;
+    font-size: 13px;
+    position: relative;
+}
+header section ul li a::after
+{
+    position: absolute;
+    content: '';
+    top:-2px;
+    left:0;
+    height:2px;
+    width:100%;
+    background-color: var(--hov-color , red);
+    transform: scaleX(.0);/*hna kat7adad l width dyalo x */
+    transform-origin: right; /*hna bach t7ayd l hover ykeml mn left*/
+    transition: transform 250ms ease-in; /*hadi sor3a bach y3mer lkhat*/
+}
+header section ul li a:hover::after
+{
+    transform: scaleX(1);/*l width li ghadi ywsal lih fach ydir hover*/
+    transform-origin: left; /*bach facxh dir lih hover yabda mn left*/
+}
+header section div
+{
+    float:right;
+    width:9%;
+    text-align: right;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 1%;
+}
+header section div i
+{
+    color:var(--text-color , #DDD);
+    margin-right: 10px;
+}
+/*end header*/
+/*start divs*/
+div.divs1,
+div.divs2
+{
+    float:left;
+    width:50%;
+    height: 4px;
+    overflow: auto;
+}
+div.divs1
+{
+    background-color: var(--hov-color ,red);
+}
+div.divs2
+{
+    background-color: #444648;
+}
+/*end divs*/
+/*start articles*/
+article.moves
+{
+    background-image:url('../images/dark.jpg');
+    background-size: cover;
+    min-height: 500px;
+    background-position: -120px -150px;
+    
+}
+article.moves > section
+{
+    position:relative;
+}
+article.moves section div
+{
+    width:380px;
+    position: absolute;
+    right: 10%;
+    bottom: 30%;
+}
+article.moves section div h2
+{
+    color:var(--wit-color ,white);
+    margin:0;
+}
+article.moves section div h2,
+article.moves section div h3,
+article.moves section div h3 span
+{
+    font-size: 40px;
+}
+article.moves section div h3
+{
+    color:var(--wit-color ,white);;
+    margin:0;
+    text-transform: lowercase;
+}
+article.moves section div h3 span
+{
+    color:var(--hov-color ,red);
+    text-transform: lowercase;
+}
+article.moves section div p
+{
+    color: var(--text-color ,#FFF);
+    margin-top: 5px;
+}
+article.moves section div button
+{
+    cursor: pointer;
+}
+article.moves section div button.by
+{
+    background-color: var(--hov-color ,red);
+    color: var(--wit-color ,white);;
+    border-color: var(--hov-color ,red);
+    border-radius: 5px;
+    padding:5px 10px;
+}
+article.moves section div button.live
+{
+    background-color: #0C0C0C;
+    color:var(--wit-color ,white);;
+    border-radius: 5px;
+    padding:5px 10px;
+}
+article.moves section figure
+{
+    position: absolute;
+    bottom:3%;
+    left:45%;
+    cursor: pointer;
+}
+article.moves section figure button
+{
+    border-radius: 50%;
+    border:1px solid var(--wit-color ,white);;
+    margin-left:5px;
+    display: inline;
+    padding: 3px;
+}
+article.moves section figure button:hover
+{
+    background-color: var(--hov-color ,red);
+    border-color:var(--hov-color ,red);
+    cursor: pointer;
+}
+/*icon*/
+article.icon
+{
+    background-color: #252525;
+    color:var(--text-color ,#DDD);
+    overflow: auto;
+}
+article.icon section
+{
+    float:left;
+    width:22%;
+    margin-right:3%;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    border-radius: 10px;
+}
+article.icon section::after
+{
+    content: '';
+    position: absolute;
+    left:0;
+    bottom:0;
+    height:2px;
+    width: 100%;
+    background-color: var(--hov-color ,red);
+    transform: scaleX(.3); /* hada hwa l3bar dyal l khat la7mar li ta7t section*/
+    transform-origin:left ;
+}
+article.icon section:hover h5
+{
+    color:var(--wit-color ,white);
+}
+article.icon section:hover p
+{
+    color:var(--wit-color ,white)
+}
+article.icon section:hover i
+{
+    color:var(--hov-color ,red)
+}
+article.icon section i
+{
+    font-size: 70px;
+    margin: 10px 0 10px 5px;
+    box-shadow: 0 0 0 0 var(--hov-color ,red);
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    padding: 15px;
+    border:5px solid var(--hov-color ,red);
+    transition:all .8s ease-in-out;
+}
+article.icon section:hover i
+{
+    box-shadow: 0 0 0 400px var(--hov-color ,red);
+}
+article.icon section h5
+{
+    margin: 0;
+    margin-top:10px;
+    transition:all .8s ease-in-out;
+}
+article.icon section p
+{
+    margin: 10px 0;
+    transition:all .8s ease-in-out;
+}
+/*portfolio*/
+article.port
+{
+    background-color:#202020;
+    overflow: auto;
+}
+article.port section div
+{
+    position: relative;
+}
+article.port section div::after
+{
+    position: absolute;
+    content: '';
+    width: 100%;
+    top:0;
+    left:0;
+    height:2px;
+    background-color: var(--text-color ,#DDD);
+    transform: scaleX(.3);
+    transform-origin: left;
+}
+article.port section div:hover::after
+{
+    /*transform:scaleX(1);*/
+    background-color: var(--hov-color ,red);
+}
+article.port section.boven div
+{
+    float:left;
+    height:200px;
+    overflow: hidden;
+    margin-top: 40px;
+}
+article.port section.boven div.left h2
+{
+    color:var(--wit-color ,white);
+}
+article.port section.boven div.left p
+{
+    color: var(--text-color ,#DDD);
+}
+article.port section.boven div.left
+{
+    width:20%;
+    background-color:#202020;
+}
+article.port section.boven div.midden
+{
+    width:60%;
+    background-color: #232323;
+}
+article.port section.boven div.right
+{
+    width:20%;
+    background-color: #3a3a3a;
+}
+/**/
+article.port section.onder div
+{
+    float:left;
+    height:200px;
+    overflow: hidden;
+    margin-bottom: 40px;
+}
+article.port section.onder div.left
+{
+    width:20%;
+    background-color: #393939;
+}
+article.port section.onder div.midden
+{
+    width:40%;
+    background-color: #b8b8b8;
+}
+article.port section.onder div.right
+{
+    width:40%;
+    background-color: #111111;
+}
+/*article resp*/
+article.resp
+{
+    background-color: #252525;
+    overflow: auto;
+}
+article.resp img
+{
+    float:left;
+    width:60%;
+    margin-top:40px;
+}
+article.resp section
+{
+    float:right;
+    width:35%;
+    margin-left: 5%;
+    margin-top:40px;
+    position: relative;
+}
+article.resp section::after
+{
+    content:'';
+    width:100%;
+    height:2px;
+    position: absolute;
+    top:0;
+    left:0;
+    background-color:var(--text-color ,#DDD);
+    transform: scaleX(.2);
+    transform-origin: left;
+}
+article.resp section h3
+{
+    color:var(--wit-color ,white);
+    font-size: 20px;
+}
+article.resp section p
+{
+    color:var(--text-color ,#DDD);
+    font-size: 13px;
+}
+article.resp section ul
+{
+    color:var(--spec-color ,#DDD);
+    list-style: none;
+    padding-left:10px;
+}
+article.resp section ul li
+{
+    margin-bottom:5px;
+}
+article.resp section ul li::before
+{
+    content:"-";
+    color:var(--hov-color ,red);
+    margin-right: 10px;
+    font-weight: bold;
+    font-size: 20px;
+}
+article.resp section button
+{
+    cursor:pointer;
+    border-radius:10px;
+    color:var(--wit-color ,white);
+    background-color:#8dc63f;
+    border:none;
+    padding:5px 10px;
+    text-transform: capitalize; 
+}
+article.resp section button:hover
+{
+    border:1px solid var(--wit-color ,white);
+    padding: 4px 10px;
+}
+/*skilss*/
+article.skills
+{
+    background-color: var(--hov-color ,#e5493a);
+    color:var(--wit-color ,white);
+    overflow: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+article.skills div.conatiner > section
+{
+    position: relative;
+    float:left;
+    width:40%;
+}
+article.skills div.conatiner > section::after
+{
+    content:'';
+    width:100%;
+    height:2px;
+    position: absolute;
+    top:0;
+    left:0;
+    background-color:var(--wit-color ,white);
+    transform: scaleX(.2);
+    transform-origin: left;
+}
+article.skills section h3
+{
+    font-size: 30px;
+    margin-top:10px;
+    margin-bottom:0px;
+}
+article.skills section p
+{
+    font-size: 13px;
+    width:80%;
+}
+article.skills section button
+{
+    cursor:pointer;
+    border-radius:10px;
+    background-color:#000;
+    color:var(--wit-color ,white);
+    border:none;
+    padding:10px 20px;
+    text-transform: capitalize; 
+    margin-top:20px;
+}
+article.skills section button:hover
+{
+    border:1px solid var(--wit-color ,white);
+}
+article.skills div.conatiner > div
+{
+    float:right;
+    width:60%;
+}
+article.skills div.conatiner > div h4
+{
+    margin-top: 0;
+}
+article.skills div.conatiner > div article div.niks
+{
+    height: 5px;
+    width:100%;
+    border: 1px solid #ec776b;
+    background-color:none;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    margin-left:5px;
+}
+article.skills div.conatiner > div article div.niks div.wit
+{
+    border-radius: 5px;
+    height: 5px;
+}
+article.skills div.conatiner > div article div.niks
+{
+    position: relative;
+}
+article.skills div.conatiner > div article.art1 div.niks div.wit
+{
+    width:95%;
+    background-color: var(--wit-color ,white);
+}
+article.skills div.conatiner > div article span
+{
+    position: absolute;
+    width: fit-content;
+    top:-30px;
+    color:var(--wit-color ,white);
+    background-color: #000;
+    padding:2px 10px;
+    border-radius: 10px;
+    position: relative;
+}
+article.skills div.conatiner > div article span::after
+{
+    content:"";
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    height:5px;
+    width:100%;
+    background-color: #000;
+    transform:scaleX(.1);
+    border-bottom-right-radius: 100%;
+    font-weight: bolder;
+}
+article.skills div.conatiner > div article.art1 div span
+{
+    left:92.4%;
+}
+article.skills div.conatiner > div article.art2 div.niks div.wit
+{
+    width:50%;
+    background-color: var(--wit-color ,white);
+}
+article.skills div.conatiner > div article.art2 div span
+{
+    left:47.4%;
+}
+article.skills div.conatiner > div article.art3 div.niks div.wit
+{
+    width:72%;
+    background-color: var(--wit-color ,white);
+}
+article.skills div.conatiner > div article.art3 div span
+{
+    left:69.4%;
+}
+article.skills div.conatiner > div article.art4 div.niks div.wit
+{
+    width:36%;
+    background-color: var(--wit-color ,white);
+}
+article.skills div.conatiner > div article.art4 div span
+{
+    left:33.4%;
+}
+/*client*/
+article.client
+{
+    text-align: center;
+    background-color: #252525;
+    overflow: auto;
+    padding: 40px 0 50px;
+}
+article.client h3
+{
+    font-size:20px;
+    text-transform: uppercase;
+    color:var(--wit-color ,white);
+    position: relative;
+}
+article.client h3::after
+{
+    content: '';
+    position: absolute;
+    top:-15px;
+    left:0;
+    width:100%;
+    height:2px;
+    background-color: var(--text-color ,#DDD);
+    transform: scaleX(.05);
+}
+article.client p
+{
+    font-size:13px;
+    color:var(--text-color ,#DDD);
+    width: 506px;
+    margin: 0px auto 5px;
+}
+article.client section
+{
+    color:var(--spec-color ,#DDD)
+}
+article.client section > i
+{
+    font-size: 50px;
+    cursor: pointer;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+article.client section > i:hover
+{
+    background-color: var(--hov-color ,red);
+    border-radius: 5px;
+}
+article.client section > div
+{
+    display: inline;
+    margin: 0 70px;
+}
+article.client section > div i
+{
+    font-size: 100px;
+    margin:20px 2% 30px;
+}
+article.client section > div i:hover
+{
+    color:var(--wit-color ,white);
+    cursor: pointer;
+}
+/*contact*/
+article.contact
+{
+    overflow: auto;
+    background-color: #202020;
+}
+article.contact section
+{
+    float:left;
+    margin: 50px 0;
+    padding-right:3%;
+}
+article.contact section > h3
+{
+    color:var(--wit-color ,white);
+    text-transform: uppercase;
+    position: relative;
+    margin-bottom: 30px;
+}
+article.contact section > h3::after
+{
+    position:absolute;
+    content:"";
+    height:2px;
+    bottom:-15px;
+    left:0;
+    width:100%;
+    background-color: var(--hov-color ,red);
+    transform: scaleX(.4) ;
+    transform-origin: left;
+}
+article.contact section.about
+{
+    width:30.33333%;
+}
+article.contact section.about > h3::after
+{
+    transform:scaleX(.3);
+}
+article.contact section.about p
+{
+    color: var(--text-color ,#DDD);
+    font-size: 13px;
+    line-height: 18px;
+}
+article.contact section.about label
+{
+    color:var(--wit-color ,white)
+}
+article.contact section.about li
+{
+    position: relative;
+    list-style: none;
+    width:fit-content
+}
+article.contact section.about li::before
+{
+    content: "\f0e0"; 
+    font-family: "Font Awesome 5 Free";
+    color:var(--text-color ,#DDD);
+    position: absolute;
+    top:16px;
+    right:-5px;
+}
+article.contact section.about li input
+{
+    background-color: #171717;
+    border:none;
+    color: var(--text-color ,#DDD);
+    margin: 10px 0 10px;
+    height:20px;
+    padding: 5px 10px;
+    width:100%;
+}
+article.contact section.about li button
+{
+    position: absolute;
+    right:-67px;
+    top:15px;
+    cursor:pointer;
+    border-radius: 10px;
+    border:none;
+    background-color:var(--text-color ,#DDD);
+    border:1px solid var(--text-color ,#DDD);
+}
+article.contact section.about li button:hover
+{
+    border: 1px solid var(--spec-color ,#DDD)
+}
+article.contact section.about a
+{
+    color:var(--spec-color ,#DDD);
+    text-decoration: none;
+    font-size: 13px;
+}
+/*latest*/
+article.contact section.latest
+{
+    width: 30.33333%;
+}
+article.contact section.latest div
+{
+    display: block;
+    margin:0 0 10px 10px;
+    color:var(--text-color ,#DDD);
+    position: relative;
+    overflow: hidden;
+    position: relative;
+}
+article.contact section.latest div::after
+{
+    content:"comment";
+    position: absolute;
+    bottom: 0px;
+    left:90px;
+    width:100%;
+    color: var(--spec-color ,#DDD);
+}
+article.contact section.latest div.v2::after
+{
+    left:95px;
+}
+article.contact section.latest div.v3::after
+{
+    left:82px;
+}
+article.contact section.latest div::before
+{
+    position: absolute;
+    left:73px;
+    bottom: 0px;
+    width:100%;
+    color: #8dc63f
+}
+article.contact section.latest div.v1::before
+{
+    content:"24";
+}
+article.contact section.latest div.v2::before
+{
+    content:"no";
+    color:var(--spec-color ,#DDD)
+}
+article.contact section.latest div.v3::before
+{
+    content:"5";
+}
+article.contact section.latest div:hover p
+{
+    color:var(--wit-color)
+}
+article.contact section.latest div:hover h3
+{
+    background-color: var(--hov-color ,red);
+}
+article.contact section.latest div:hover h3 span
+{
+    color: var(--wit-color ,white);
+}
+article.contact section.latest hr
+{
+    border:none;
+    border-bottom: 1px solid var(--text-color);
+    width:90%;
+}
+article.contact section.latest div h3
+{
+    float: left;
+    width:20%;
+    text-align: center;
+    background-color: #111;
+    color:var(--wit-color ,white);
+    padding-top:10px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    line-height: 16px;
+    margin-right:5%;
+    margin-top: 15px;
+}
+article.contact section.latest div h3 span
+{
+    display: block;
+    color:var(--spec-color ,#DDD);
+}
+article.contact section.latest div p
+{
+    float: left;
+    width:75%;
+    color:var(--text-color)
+}
+/*get*/
+article.contact section.get
+{
+    width: 30.33333%;
+}
+article.contact section.get div
+{
+    margin:10px 0px;
+    overflow: hidden;
+    padding-top: 10px;
+    height: fit-content;
+}
+article.contact section.get div.clear
+{
+    margin:0;
+    padding: 0;
+}
+article.contact section.get div span
+{
+    color: var(--text-color ,#DDD);
+    float: left;
+    width:30%;
+}
+article.contact section.get div p
+{
+    color: var(--spec-color ,#DDD);
+    float:left;
+    width:70%;
+    margin:0;
+    padding: 0;
+}
+article.contact section.get div p:hover
+{
+    color: var(--hov-color ,red);
+}
+article.contact section.get div p i
+{
+    color: var(--text-color ,#DDD);
+}
+article.contact section.get div p i:hover
+{
+    color: var(--hov-color ,red);
+}
+article.contact section.get hr
+{
+    border:none;
+    border-bottom: 1px solid var(--text-color ,#DDD);
+    width:95%
+}
+/*end articles*/
+/*start footer*/
+footer
+{
+    background-color: #111;
+    height: 50px;
+    text-align: center;
+    color:var(--text-color ,#DDD);
+    overflow: hidden;
+}
+/*end footer*/

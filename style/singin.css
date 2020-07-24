@@ -1,0 +1,238 @@
+/*start global*/
+.conatiner
+{
+    width: 1000px;
+    margin: 0 auto;
+}
+*
+{
+    font-size: 15px;
+    text-transform: capitalize;
+}
+* :focus
+{
+    outline: none;
+}
+.clear
+{
+    clear:both;
+}
+:root
+{
+    --text-color:#707070;
+    --hov-color: #e5493a;
+    --spec-color:#959595;
+}
+a:active
+{
+    cursor: progress;
+}
+/*end global*/
+/*start main*/
+nav
+{
+    background-color:#111;
+    overflow: hidden;
+    color:var(--text-color , #DDD);
+}
+nav select 
+{
+    cursor: pointer;
+}
+nav section.left
+{
+    float:left;
+    width:50%;
+}
+nav section.left *,
+nav section.right *
+{
+    display: inline-block;
+}
+nav section.left ul
+{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+nav section.left ul li select
+{
+    border: none;
+    background-color: #111;
+    width:70px;
+    color:var(--text-color , #DDD)
+}
+nav section.left ul li
+{
+    margin-right:40px
+}
+/*right section*/
+nav section.right
+{
+    float: right;
+    width:50%;
+    margin-top:14px;
+    text-align: right;
+}
+nav section.right div,
+nav section.right select
+{
+    margin-right: 10px;
+}
+nav section.right div.links::before
+{
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    content: "\f015";   
+}
+nav section.right > span::after
+{
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    content: "\f004"; 
+}
+nav section.right div.links a
+{
+    text-decoration: none;
+    color:var(--text-color , #DDD)
+}
+nav section.right div.links a:hover
+{
+    color:#8dc63f
+}
+nav section.right select
+{
+    background-color:#111;
+    border:none;
+    color:var(--text-color , #DDD)
+}
+nav section.right div a i
+{
+    color:var(--text-color , #DDD)
+}
+nav section.right div a i:hover
+{
+    color: var(--hov-color ,red);
+}
+
+/*end main*/
+/*start divs*/
+div.divs1,
+div.divs2
+{
+    float:left;
+    width:50%;
+    height: 4px;
+}
+div.divs1
+{
+    background-color: var(--hov-color ,red);
+}
+div.divs2
+{
+    background-color: #444648;
+}
+/*end divs*/
+/*start articles*/
+article
+{
+    background-image: url('../images/singback.jpg');
+    height: 513px;
+    background-size: cover;
+    position: relative;
+}
+article form
+{
+    position: absolute;
+    top: 25%;
+    left: 38%;
+    text-align: center;
+}
+article form input
+{
+    margin-top:10px
+}
+article form h2
+{
+    color:var(--spec-color ,#DDD);
+    padding-bottom: 5px;
+    font-weight:bold;
+    font-size:20px;
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+}
+article form ul
+{
+    list-style: none;
+    padding: 0;
+}
+article form ul li::after
+{
+    content: "*";
+    color:var(--hov-color ,red);
+    margin-left: 5px;
+}
+article form ul li input
+{
+    border:none;
+    background-color: #31343B;
+    border-radius: 15px;
+    text-transform: lowercase;
+    color:var(--text-color ,#DDD);
+    padding: 5px 10px;
+    min-width:300px;
+    min-height: 20px;
+}
+article form ul li input:focus
+{
+    outline:none;
+    border:1px solid var(--text-color ,#DDD);
+    padding: 4px 9px;
+}
+article form > section div
+{
+    float: left;
+    margin-left: 10px;
+}
+article form > section div input
+{
+    display: inline-block;
+    border-radius: 50%;
+    
+}
+article form > section div label
+{
+    color:var(--spec-color ,#DDD);
+}
+article form > section a
+{
+    float:right;
+    text-decoration: none;
+    color:var(--spec-color ,#DDD);
+    margin-top: 10px;
+    margin-right: 10px;
+}
+article form > input
+{
+    cursor:pointer;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+article form > input:focus
+{
+    outline:none
+}
+/*end articles*/
+/*start footer*/
+footer
+{
+    background-color: #111;
+    height: 50px;
+    text-align: center;
+    color:var(--text-color ,#DDD);
+    overflow: hidden;
+}
+footer p span 
+{
+    color:var(--spec-color ,#DDD);
+}
+/*end footer*/

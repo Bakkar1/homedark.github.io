@@ -1,0 +1,222 @@
+/*start global*/
+body
+{
+    background-color:var(--back-color);
+}
+.conatiner
+{
+    width: 1000px;
+    margin: 0 auto;
+}
+*
+{
+    font-size: 15px;
+    text-transform: capitalize;
+}
+.clear
+{
+    clear:both;
+}
+:root
+{
+    --text-color:#707070;
+    --hov-color: #e5493a;
+    --back-color: #202020;
+    --input-bkcolor: #171717;
+}
+a:active
+{
+    cursor: progress;
+}
+/*end global*/
+/*start main*/
+nav
+{
+    background-color:#111;
+    overflow: hidden;
+    color:var(--text-color , #DDD)
+}
+nav select 
+{
+    cursor: pointer;
+}
+nav section.left
+{
+    float:left;
+    width:50%;
+}
+nav section.left *,
+nav section.right *
+{
+    display: inline-block;
+}
+nav section.left ul
+{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+nav section.left ul li select
+{
+    border: none;
+    background-color: #111;
+    width:70px;
+    color:var(--text-color , #DDD)
+}
+nav section.left ul li
+{
+    margin-right:40px
+}
+/*right section*/
+nav section.right
+{
+    float: right;
+    width:50%;
+    margin-top:14px;
+    text-align: right;
+}
+nav section.right div,
+nav section.right select
+{
+    margin-right: 10px;
+}
+nav section.right div.links::before
+{
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    content: "\f015";   
+}
+nav section.right > span::after
+{
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    content: "\f004"; 
+}
+nav section.right div.links a
+{
+    text-decoration: none;
+    color:var(--text-color , #DDD)
+}
+nav section.right div.links a:hover
+{
+    color:#8dc63f
+}
+nav section.right select
+{
+    background-color:#111;
+    border:none;
+    color:var(--text-color , #DDD)
+}
+nav section.right div a i
+{
+    color:var(--text-color , #DDD)
+}
+nav section.right div a i:hover
+{
+    color: var(--hov-color ,red);
+}
+
+/*end main*/
+/*start divs*/
+div.divs1,
+div.divs2
+{
+    float:left;
+    width:50%;
+    height: 4px;
+}
+div.divs1
+{
+    background-color: var(--hov-color ,red);
+}
+div.divs2
+{
+    background-color: #444648;
+}
+/*end divs*/
+/*start form*/
+form article
+{
+    margin: 10px auto;
+    margin-top: 30px;
+    height: 470px;
+    width: 450px;
+    color:var(--text-color);
+}
+form article h3
+{
+    display: flex;
+    justify-content: center;
+}
+form article input
+{
+    margin-top: 10px;
+    border:none;
+    background-color: var(--input-bkcolor ,#DDD);
+    color:var(--text-color);
+    border-radius: 15px;
+}
+form article main input[name="FirstName"]
+{
+    margin-right: 10px;
+}
+form article main input,
+form article div input
+{
+    height: 20px;
+    padding: 5px 10px;
+}
+form article main input:focus,
+form article div input:focus
+{
+    outline: none;
+    border:1px solid var(--hov-color ,red);
+    padding: 4px 9px;
+}
+form article > input,
+form article > div input
+{
+    display: block;
+}
+
+form article > div input
+{
+    min-width: 390px;
+}
+form article section input:focus
+{
+    outline: none;
+}
+form article section input:visited
+{
+    color:red
+}
+form article section span
+{
+    margin-right: 10px;
+}
+form article p
+{
+    width:200px;
+    font-size: 13px;
+}
+form article > input[type="submit"]
+{
+    margin:10px auto;
+    cursor: pointer;
+}
+/*end form*/
+/*start footer*/
+footer
+{
+    background-color: #111;
+    height: 50px;
+    text-align: center;
+    color:var(--text-color ,#DDD);
+    overflow: hidden;
+}
+footer p span 
+{
+    color:var(--spec-color ,#DDD);
+}
+/*end footer*/
